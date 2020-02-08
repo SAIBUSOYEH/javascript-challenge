@@ -17,15 +17,13 @@ console.log(data);
    });
  });
 
-
- var submit = d3.select("#submit");
-
+ var submit = d3.select("#filter-btn");
  // function to take input and recreate table
  submit.on("click", function() {
    // stops page from refreshing
    d3.event.preventDefault();
  
-   d3.select(".summary").html("");
+   tbody.html("");
  
    // user input as variable
    var inputElement = d3.select("#datetime");
